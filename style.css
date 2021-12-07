@@ -1,0 +1,321 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color:black;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    min-height: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+    background: url("img/header.png") no-repeat;
+}
+
+.header,
+.main {
+    max-width: 940px;
+    margin: 0px auto;
+}
+
+.wrapper__footer {
+    max-width: 100%;
+    border-top: 10px solid #ff4e50;
+}
+
+.header{
+    width: 100%;
+    height: 700px;
+    
+}
+
+.header__upper-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: top;
+    margin-top:38px;
+    margin-bottom: 150px;
+}
+
+.header__upper-part__logo {
+    font-size: 20px;
+    margin-left: 13px;
+    color:white;
+    letter-spacing: 2px;
+}
+
+.button__upper-part__button {
+    color:white;
+    font-size: 14px;
+    width: 91px;
+    height: 36px;
+    border-radius: 50px;
+    
+}
+
+.button__upper-part__button_sign-up {
+    border: 2px solid white;
+}
+
+.header__main {
+    max-width: 500px;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+}
+
+.header__main_title {
+    text-transform: uppercase;
+    font-size: 52px;
+    margin-bottom: 40px;
+}
+
+.header__main_text {
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.header__main_button {
+    font-size: 14px;
+    background-color: #ff4e50;
+    padding: 15px 25px;
+}
+
+.main__block {
+    margin-top: 100px;
+    max-width: 100%;
+}
+
+.main__block_h3 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.main__block__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__block__cards__card_step {
+    width: 300px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 5px;
+}
+
+.step1 {
+    background: url("img/step1.png");
+}
+.step2 {
+    background: url("img/step2.png");
+}
+.step3 {
+    background: url("img/step3.png");
+}
+
+.main__block__cards__card__step-name,
+.main__block__cards__card_h4,
+.main__block__cards__card_text {
+    margin: 0 0 20px 20px;
+}
+
+.main__block__cards__card_text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.main__block__cards__card_h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.main__block__cards__card__step-name {
+    font-size: 10px;
+    font-family: Montserrat;
+    color: white;
+    background-color:#ff4e50;
+    border-radius: 50px;
+    width: 70px;
+    text-align: center;
+    padding: 6px 0;
+}
+
+.main__block_partner {
+    text-align: center;
+}
+
+.main__block_h3 {
+    margin-bottom: 34px;
+}
+
+.main__block__cards_people {
+    width: 220px;
+}
+
+.main__block__cards_avatar {
+    margin-bottom: 20px;
+}
+
+.main__block__cards_name {
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.main__block__cards_text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.main__block__cards__button_partner {
+    margin-top: 40px;
+    color: #ff4e50;
+    font-size: 14px;
+}
+
+.main__block__discover {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main__block__card_discover {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.main__block__card_h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 22px;
+}
+
+.discover1,
+.discover2,
+.discover3,
+.discover4,
+.discover7 {
+    max-width: 300px;
+}
+
+.discover5,
+.discover6 {
+    max-width: 620px;
+}
+
+.main__block_discover-form {
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.main__block_discover-form_text {
+    margin-bottom: 42px;
+}
+
+.main__block_form-text {
+    width: 240px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #666666;
+    padding-left: 17px; 
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.main__block_form-button {
+    margin-left: 10px;
+    border-radius: 50px;
+    background-color:#ff4e50;
+    padding: 14px 35px;
+    color: white;
+    font-size: 14px;
+
+}
+
+.footer {
+    max-width: 940px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    margin-top:40px;
+}
+
+.footer__logo {
+    margin-left: 13px;
+    font-size: 16px;
+    color:#ff4e50;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer__list {
+    margin: 0 127px;
+}
+
+.footer__list_item {
+    margin-bottom: 14px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.footer__container_name {
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.partners {
+    margin-left: 57px;
+}
+
+.footer__areto {
+    margin-left: 305px;
+    background-color:red;
+    width: 110px;
+    height: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
