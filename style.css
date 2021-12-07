@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat bold";
+    src: url("fonts/MotserratBold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto.ttf");
+}
+
 *, *::after, *::before {
     padding: 0;
     margin: 0;
@@ -17,41 +32,45 @@ button {
     background-color: transparent;
     color: white;
     border-radius: 50px;
+    font-family: "Montserrat";
 }
-
+/*
 .wrapper {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
     min-height: 100%;
-    overflow: hidden;
     margin: 0px auto;
     background: url("img/header.png") no-repeat;
-}
+}*/
 
-.header,
-.main {
+.main,
+.footer {
     max-width: 940px;
     margin: 0px auto;
 }
 
 .wrapper__footer {
     max-width: 100%;
-    border-top: 10px solid #ff4e50;
+    border-top: 5px solid #ff4e50;
 }
 
 .header{
-    width: 100%;
+    max-width: 1440px;
     height: 700px;
-    
+    margin: 0 auto;
+    background: url("img/header.png") no-repeat;  
+}
+
+.header__content {
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .header__upper-part {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    vertical-align: top;
-    margin-top:38px;
+    padding-top:38px;
     margin-bottom: 150px;
 }
 
@@ -60,6 +79,7 @@ button {
     margin-left: 13px;
     color:white;
     letter-spacing: 2px;
+    font-family: "MotserratBold";
 }
 
 .button__upper-part__button {
@@ -78,7 +98,9 @@ button {
 .header__main {
     max-width: 500px;
     margin: 0px auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
 }
 
@@ -86,17 +108,21 @@ button {
     text-transform: uppercase;
     font-size: 52px;
     margin-bottom: 40px;
+    font-family: "MotserratBold";
+    text-align: center;
 }
 
 .header__main_text {
     font-size: 24px;
     margin-bottom: 35px;
+    font-family: "Montserrat";
 }
 
 .header__main_button {
     font-size: 14px;
     background-color: #ff4e50;
     padding: 15px 25px;
+    font-weight: 700;
 }
 
 .main__block {
@@ -107,7 +133,7 @@ button {
 .main__block_h3 {
     text-align: center;
     font-size: 22px;
-    font-weight: 700;
+    font-family: "Motserrat";
 }
 
 .main__block__cards {
@@ -116,12 +142,14 @@ button {
 }
 
 .main__block__cards__card_step {
-    width: 300px;
-    height:400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     border-radius: 5px;
+    width: 300px;
+    height: 400px;
+    /*max-width:100%;
+    max-height: auto; */
 }
 
 .step1 {
@@ -138,23 +166,27 @@ button {
 .main__block__cards__card_h4,
 .main__block__cards__card_text {
     margin: 0 0 20px 20px;
+    max-width:250px;
 }
 
 .main__block__cards__card_text {
+    padding-right: 15px;
     font-size: 14px;
     font-weight: 300;
     color: #666666;
+    font-family: "Roboto";
 }
 
 .main__block__cards__card_h4 {
     font-size: 24px;
     font-weight: 700;
     color: white;
+    font-family: "MotserratBold";
 }
 
 .main__block__cards__card__step-name {
     font-size: 10px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     color: white;
     background-color:#ff4e50;
     border-radius: 50px;
@@ -181,20 +213,27 @@ button {
 
 .main__block__cards_name {
     margin-bottom: 16px;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Montserrat";
 }
 
 .main__block__cards_text {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     color: #666666;
+    font-family: "Montserrat";
 }
 
 .main__block__cards__button_partner {
     margin-top: 40px;
     color: #ff4e50;
     font-size: 14px;
+    width: 190px;
+    height:40px;
+    text-align: center;
+    border-radius: 50px;
+    border: 3px solid #ff4e50;
 }
 
 .main__block__discover {
@@ -207,26 +246,21 @@ button {
     margin-bottom: 20px;
     border-radius: 5px;
     position: relative;
+    max-width: 100%;
 }
-
+/*
+.main__block__card_discover__image {
+    height: 310px;
+}
+*/
 .main__block__card_h4 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 25%;
     font-size: 22px;
-}
-
-.discover1,
-.discover2,
-.discover3,
-.discover4,
-.discover7 {
-    max-width: 300px;
-}
-
-.discover5,
-.discover6 {
-    max-width: 620px;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 600;
 }
 
 .main__block_discover-form {
@@ -237,6 +271,8 @@ button {
 
 .main__block_discover-form_text {
     margin-bottom: 42px;
+    font-family: "Roboto";
+    font-size: 18px;
 }
 
 .main__block_form-text {
@@ -245,43 +281,48 @@ button {
     border-radius: 5px;
     border: 1px solid #666666;
     padding-left: 17px; 
-    font-size: 14px;
+    font-family: "Roboto";
+    font-size: 16px;
     font-weight: 300;
     color: #666666;
+    
 }
 
 .main__block_form-button {
     margin-left: 10px;
     border-radius: 50px;
     background-color:#ff4e50;
-    padding: 14px 35px;
+    padding: 12px 35px;
     color: white;
     font-size: 14px;
 
 }
 
 .footer {
-    max-width: 940px;
-    margin: 0px auto;
     display: flex;
     flex-direction: row;
     margin-top:40px;
+    justify-content: space-between;
+}
+
+footer{
+    width: 100%;
 }
 
 .footer__logo {
     margin-left: 13px;
     font-size: 16px;
     color:#ff4e50;
+    font-family: "MotserratBold";
+    font-weight: 700;
 }
 
 .footer__container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    
-}
+    width: 300px;
 
-.footer__list {
-    margin: 0 127px;
 }
 
 .footer__list_item {
@@ -296,26 +337,198 @@ button {
     font-size: 14px;
 }
 
-.partners {
-    margin-left: 57px;
+.footer__container_name,
+.footer__list_item {
+    font-family: "Montserrat";
 }
 
 .footer__areto {
-    margin-left: 305px;
-    background-color:red;
-    width: 110px;
-    height: 110px;
+    margin-right: 13px;
 }
 
+hr {
+    border: none; /* Убираем границу */
+    background-color: #ff4e50; /* Цвет линии */
+    color: #ff4e50; /* Цвет линии для IE6-7 */
+    height: 3px; /* Толщина линии */
+}
 
+@media screen and (max-width: 768px) {
+    /*.main__block__cards__card_text {
+        width: 100px;
+    }*/
+    .main__block__cards__card_step {
+        width: 236px;
+    }
 
+    .main__block__cards-dreamshare {
+        display: flex;
+        padding: 0 10px;
+        justify-content: space-between;
+    }
 
+    .main__block__cards-peoples {
+        display: flex;
+        padding: 0 55px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 
+    .main__block__discover {
+        padding: 0 10px;
+    }
 
+    .main__block__card_discover {
+        width: 32%;
+        margin-bottom: 15px;
+    }
 
+    .main__block__card_discover:nth-child(5),
+    .main__block__card_discover:nth-child(6) {
+        width: 66%;
+    }
 
+    .main__block__card_discover__image {
+        max-width: 100%;
+    }
 
+    .main__block_form-button {
+        margin-left: 0;
+    }
 
+    .footer__container {
+        justify-content: space-around;
+    }
 
+}
 
+@media screen and (max-width: 480px) {
+    .header__content,
+    .main__block,
+    .footer {
+        max-width: 300px;
+    }
 
+    .header {
+        height:540px;
+    }
+
+    .header__upper-part{
+        padding-top: 20px;
+        margin-bottom: 40px;
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .header__upper-part > .header__upper-part__logo {
+        order: 2;
+    }
+
+    .header__upper-part__logo {
+        margin-top: 120px;
+    }
+
+    .header__main_title {
+        font-size: 30px;
+    }
+
+    .header__main_text {
+        text-align: center;
+    }
+
+    .main__block {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .main__block_h3 {
+        margin-bottom: 18px;
+        font-size: 22px;
+        font-family: "MotserratBold";
+    }
+
+    .main__block__cards-dreamshare {
+        flex-direction: column;
+        width:300px;
+    }
+
+    .main__block__cards__card_step {
+        width: 100%;
+        height: 240px;
+        margin-top: 10px;
+    }
+
+    .main__block__cards_people {
+        margin-bottom: 30px;
+    }
+
+    .main__block__cards__button_partner {
+        margin-top: 30px;
+    }
+
+    .main__block__discover {
+        flex-flow: column nowrap;
+    }
+
+    .main__block__card_discover {
+        height: 120px;
+        width: 100%;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .main__block__card_discover:nth-child(5),
+    .main__block__card_discover:nth-child(6) {
+        height: 120px;
+        width: 100%;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .main__block_discover-form_text {
+        margin-bottom: 15px;
+    }
+
+    .main__block_discover-form {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .main__block_form-button {
+        margin-top: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .footer__logo {
+        margin: 0;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__list_item {
+        margin: 0 7px;
+    }
+
+    .footer__container_name {
+        font-size: 14px;
+        margin: 20px 0 10px 0;
+    }
+
+    .footer__areto {
+        margin: 20px 0;
+    }
+    
+}
